@@ -1,0 +1,9 @@
+package MyPackage;
+
+public class MyThing {
+	
+	int myWholeNumber;
+	float myDecimal;
+	short mySmallNumber;
+
+}
