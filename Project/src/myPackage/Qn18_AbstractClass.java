@@ -1,24 +1,13 @@
 package myPackage;
 
+//A program that have concrete subclass that inherits three abstract methods from a superclass.
+
 public abstract class Qn18_AbstractClass {
 	
-	public class Subclass1 {
-		
-	}
+	public abstract boolean hasUppercaseLetter(String str);
 	
-	public class Subclass2{
-		
-	}
-
-	public class Subclass3{
-		
-	}
-
-
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
-
+	public abstract String toUpperCase(String str);
+	
+	public abstract int stringToInt(String str);
+	
 }

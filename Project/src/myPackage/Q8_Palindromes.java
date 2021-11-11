@@ -2,14 +2,11 @@ package myPackage;
 
 import java.util.ArrayList;
 
-//A program to
+//A program that stores strings in an ArrayList and saves all the palindromes in another ArrayList
 
 public class Q8_Palindromes {
-
-	public static void main(String[] args) {
-		
+	public void palindromes() {
 		String myArray[] = {"karan", "madam", "tom", "civic", "radar", "jimmy", "kayak", "john", "refer", "billy", "did"};
-		//String palindromes[] = {""};
 		ArrayList<String> palindromes = new ArrayList<String>();
 		
 		String reverseWord = "";
@@ -31,6 +28,6 @@ public class Q8_Palindromes {
 				System.out.print(myArray[k] + ", ");
 			}
 		}
+		System.out.println();
 	}
-
 }

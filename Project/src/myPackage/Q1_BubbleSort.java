@@ -3,7 +3,8 @@ package myPackage;
 // A program that perform a bubble sort.
 
 public class Q1_BubbleSort {
-	public static void main(String[] args) {
+	
+	public void bubbleSort() {
 		int myArray[] = {1,0,5,6,3,2,3,7,9,8,4};
 		
 		int arrayLength1 = myArray.length;
@@ -21,5 +22,6 @@ public class Q1_BubbleSort {
 		for (int i=0; i<arrayLength2; ++i)
             System.out.print(myArray[i] + " ");
         System.out.println();
+		
 	}
 }

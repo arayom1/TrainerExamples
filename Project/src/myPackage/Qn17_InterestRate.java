@@ -2,12 +2,14 @@ package myPackage;
 
 import java.util.Scanner;
 
-//A program that calculates the simple interest on the principal, 
-//rate of interest and number of years provided by the use. 
+/*
+A program that calculates the simple interest on the principal, 
+rate of interest and number of years provided by the use. 
+*/
 
 public class Qn17_InterestRate {
-
-	public static void main(String[] args) {
+	
+	public void interestRate() {
 		int principal;
 		int rate;
 		int time;
@@ -25,7 +27,5 @@ public class Qn17_InterestRate {
 		interest = principal*rate*time;
 		System.out.println("---------------------");
 		System.out.println("The interest is : " + interest);
-
 	}
-
 }

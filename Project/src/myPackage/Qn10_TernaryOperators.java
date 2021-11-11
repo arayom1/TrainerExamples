@@ -4,8 +4,7 @@ package myPackage;
 
 public class Qn10_TernaryOperators {
 
-	public static void main(String[] args) {
-
+	public void ternaryOperators() {
 		int num1 = 4;
 		int num2 = 2;
 		int result;
@@ -13,7 +12,5 @@ public class Qn10_TernaryOperators {
 		result = num1 > num2? num2: num1;
 		
 		System.out.println("The smallest number is: " + result);
-
 	}
-
 }

@@ -5,9 +5,9 @@ import java.time.LocalDate;
 //A program that demonstrate the switch case.
 
 public class Qn14_SwitchCase {
-
-	public static void main(String[] args) {
-		int function = 3;
+	
+	public void switchCase(int function) {
+		
 		String myString = "I am learning Core Java";
 		switch (function) {
 		case 1:
@@ -24,6 +24,5 @@ public class Qn14_SwitchCase {
 			    }
 			break;
 		}
-		    
 	}
 }

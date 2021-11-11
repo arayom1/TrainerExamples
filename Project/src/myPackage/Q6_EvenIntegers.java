@@ -4,16 +4,12 @@ package myPackage;
 
 public class Q6_EvenIntegers {
 
-	public static void main(String[] args) {
+	public void evenIntegers(int num) {
 		
-		int num = 8;
-	
 		if((num / 2) * 2 == num) {
 			System.out.println("Even");
 		}else {
 			System.out.println("Odd");
 		}
-
 	}
-
 }

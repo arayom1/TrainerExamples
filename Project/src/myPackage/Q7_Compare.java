@@ -5,9 +5,10 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-//import myPackage.Q7_Comparator.Employee;
+//A program to sort two employees based on their name, department, and age using the comparator interface. 
 
 public class Q7_Compare{
+	
 	public class Employee implements Comparator<Employee>{
 		Integer age;
 		String name;

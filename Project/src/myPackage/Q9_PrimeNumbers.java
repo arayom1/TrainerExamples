@@ -4,15 +4,29 @@ package myPackage;
 
 public class Q9_PrimeNumbers {
 
-	public static void main(String[] args) {
+	public void primeNumbers() {
+		int numbers = 100;
+		boolean isPrimeNumber = true;
+		String primeNumber = "";
 		
-		int myArray[] = {1,2,3,4,5,6,7,8,9};
-		for(int i=0; i<myArray.length; i++) {
-			if(myArray[i] %  2 == 1 && myArray[i] /  1 == myArray[i]) {
-				System.out.println(myArray[i] + " is prime");
-			}
+		for (int i = 2; i <= numbers; i++) {
+			isPrimeNumber = verifyNumber(i);
+            if (isPrimeNumber) {
+            	primeNumber = primeNumber + i + ", ";
+            }
 		}
-
+		System.out.println("The prime numbers are: ");
+		System.out.println(primeNumber);
 	}
-
+	
+	public static boolean verifyNumber(int num) {
+		int remainder;
+		for (int i = 2; i <= num / 2; i++) {
+			remainder = num % i;
+			if (remainder == 0) {
+                return false;
+            }
+		}
+		return true;
+	}
 }

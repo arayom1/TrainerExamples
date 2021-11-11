@@ -2,26 +2,26 @@ package myPackage;
 
 import java.util.ArrayList;
 
-public class Qn19_ArrayList {
+/*
+A program that creates an ArrayList and insert integers 1 through 10.
+It displays the ArrayList. Add all the even numbers and display all the results.
+Add all the odd numbers and display all the results. Remove the prime numbers from
+the ArrayList and print out the remaining ArrayList.
+*/
 
-	public static void main(String[] args) {
+public class Qn19_ArrayList {
+	
+	ArrayList<Integer> list;
+	
+	public void primeArrayList(){
 		int evenNumbers = 0;
 		int oddNumbers = 0;
-		int nonPrimes = 0;
-		String primeNum = "";
 		
-		ArrayList<Integer> list = new ArrayList<Integer>();
+		list = new ArrayList<Integer>();
 		
-		list.add(1);
-		list.add(2);
-		list.add(3);
-		list.add(4);
-		list.add(5);
-		list.add(6);
-		list.add(7);
-		list.add(8);
-		list.add(9);
-		list.add(10);
+		for (int i = 1; i <= 10; ++i) {
+			list.add(i);
+		}
 		
 		System.out.println("Integers 1 through 10: " + list);
 		
@@ -34,11 +34,37 @@ public class Qn19_ArrayList {
 			else if(list.get(i)%2 == 1) {
 				oddNumbers = oddNumbers + list.get(i);
 			}
-			
 		}
+		
 		System.out.println("The sum of even numbers: " + evenNumbers);
 		System.out.println("The sum of odd numbers: " + oddNumbers);
-		//System.out.println("Numbers that aren't prime: " + nonPrimes);
+		trimPrimes();
+		System.out.print("The remaining non prime numbes are: [");
+		for (Integer i : list) {
+			System.out.print(i + " ");
+		}
+		System.out.println("]");
+	}
+
+	public boolean isPrime(int num) {
+		if (num == 0 || num == 1)
+			return false;
+		
+		for (int i = 2; i < num; ++i) {
+			if (num % i == 0)
+				return false;
+		}
+		return true;
+	}
+	
+	public void trimPrimes() {
+		for (int i = 0; i < list.size(); ++i) {
+			if (isPrime(list.get(i))) {
+				list.remove(i);
+				// Subtract one to account for the removal of a prime
+				--i;
+			}
+		}
 	}
 }
 

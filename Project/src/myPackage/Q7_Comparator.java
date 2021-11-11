@@ -4,9 +4,9 @@ package myPackage;
 
 public class Q7_Comparator {
 
-	public static void main(String[] args) {
-		
+	public void comparator() {
 		Q7_Compare compare = new Q7_Compare();
 		compare.Compare();
 	}
 }
+	

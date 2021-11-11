@@ -1,7 +1,10 @@
 package myPackage;
 
+//A program that reverse a string without using reverse().
+
 public class Q3_ReverseString {
-	public static void main(String[] args) {
+	
+	public void reverseString() {
 		String word = "example";
 		String reverseWord1 = "";
 		String reverseWord2 = "";
@@ -16,12 +19,10 @@ public class Q3_ReverseString {
 		for( int j = word.length(); j > 0; j--) {
 			letter = word.charAt(j-1);
 			reverseWord2 = reverseWord2 + letter;
-			
 		}
 		
 		System.out.println("Reverse options");
 		System.out.println("1st option: " + reverseWord1);
 		System.out.println("2nd option: " + reverseWord2);
 	}
-
 }
